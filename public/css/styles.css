@@ -1,0 +1,203 @@
+/* applies to entire webpage */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+Curriculum/styles.css
+body::-webkit-scrollbar {
+  width: 0.2rem;
+}
+body::-webkit-scrollbar-track {
+  background: lightblue;
+}
+body::-webkit-scrollbar-thumb {
+  background: lightblue;
+}
+
+/* everything that targets the top section */
+
+.top-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(https://free4kwallpapers.com/uploads/originals/2015/11/13/windows-7-original-wallpaper.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  width: 380px;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 60px #000;
+}
+
+.profile {
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: lightblue 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password {
+  background: white;
+  color: #000;
+}
+
+.login {
+  background: white;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid blue;
+  animation: typing 2s steps(21) infinite;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}
+
+.enterArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.enter:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.enter a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.instruct {
+  text-align: center;
+  color: white;
+}
+
+/* everything that targets the taskbar in the bottom section */
+
+.taskbar-icons {
+  list-style: none;
+  padding: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-container .taskbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 70px;
+  height: 100vh;
+  background-color: #3498db;
+  overflow: hidden;
+  border-radius: 2%;
+}
+.nav-container ul li {
+  list-style: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 25px;
+}
+.nav-container ul li:hover {
+  opacity: 0.6;
+}
+
+.nav-container ul li a {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#clock {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  margin-right: 5px;
+  padding: 0 20px 0 20px;
+}
+
+/* everything that targets the rest of the bottom section */
+
+.webpage {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  left: 10%;
+  top: 5%;
+  right: 15%;
+  padding: 20%;
+  visibility: hidden;
+}
+
+.bottom-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(https://wallpaperaccess.com/full/4151368.jpg);
+  background-size: cover;
+  background-position: center center;
+}

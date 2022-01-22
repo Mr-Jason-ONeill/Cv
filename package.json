@@ -1,0 +1,16 @@
+{
+  "name": "curriculum",
+  "version": "1.0.0",
+  "description": "Cv server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2"
+  }
+}

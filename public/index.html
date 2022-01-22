@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cv, Jason O'Neill</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel= "icon" href="/images/favicon.ico">
+    <script src="https://kit.fontawesome.com/bc41e9273e.js" crossorigin="anonymous"></script>
+  </head>
+  <body onload="showTime()" >
+    <!-- top section just for login style section-->
+<section id="top-section" class="top-section">
+<div class="form-container">
+    <img class="profile" src="/images/profile.png" alt="">
+    <form action="#">
+     <div>
+         <label for="name">Username:</label>
+         <p class="login">Mr Jason Anthony O'Neill</p>
+     </div>   
+     <div>
+         <label for="password">Password:</label>
+         <p class="password">**********</p>
+     </div>
+     <span><input type="checkbox">Remember Me</span>
+     <div class="enterArea">
+         <button class="enter"><a href="/index.html#bottom-section">Login</a></button>
+     </div>
+</form>
+<br>
+    <p class="instruct">Click "Login" to see more.</p>
+</div>
+</section>
+<!-- bottom section will display/mimic an OS dashboard and once icons are clicked, 
+    will display them to look like webpages  -->
+<section id="bottom-section" class="bottom-section">
+
+    <!--Taskbar location, left side of dashboard-->
+    <aside class="nav-container">
+        <nav class="taskbar">
+            <ul>
+                <li><a href="#top-section"><abbr title="logout"><img src="/images/exit.png" alt="logout"></abbr></a></li>
+                <li><a href="/work.html"><abbr title="Work Experience"><img src="/images/work.png" alt="work exp"></abbr></a></li>
+                <li><a href="/about.html"><abbr title="About Me"><img src="/images/about.png" alt="about me"></abbr></a</li>
+                <li><a href="/school.html"><abbr title="Education"><img src="/images/school.png" alt="education"></abbr></a></li>
+                <li><a href="/projects.html"><abbr title="Projects"><img src="/images/project.png" alt="projects"></abbr></a></li>
+                <li><a href="mailto: jason.a.oneill@gmail.com"><abbr title="Contact"><img src="/images/contact.png" alt="contact"></abbr></a></li>
+                <div id="clock" onload="showTime()"></div>
+            </ul>
+       </nav>
+    </aside>
+
+</section>
+<script src="/clock.js"></script>
+  </body>
+
+ </html>
