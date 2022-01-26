@@ -2,8 +2,8 @@
   margin: 0;
 }
 
-
 body {
+  width: 100%;
   font-family: "Segoe UI";
   box-sizing: border-box;
   background: #18191a;
@@ -155,7 +155,11 @@ body {
   background: #4e4f50;
 }
 
+
 /* navbar ends here */
+
+/* Content in center and right side starts here */
+
 
 .content {
   display: flex;
@@ -170,8 +174,9 @@ body {
 }
 
 .content-center {
-  width: 50%;
+  width: 100%;
   text-align: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -571,4 +576,33 @@ body {
 
 .contacts i {
   margin-left: 15px;
+}
+
+@media (max-width:600px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar-right-links {
+    display: none;
+  }
+  .your-pages {
+    display: none;
+    float: right;
+  }
+  .content-left {
+    width: 50%;
+  }
+  .share {
+    visibility: collapse;
+  }
+
+  .stories img {
+    display: none; 
+   }
+  .news-feed {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 }
