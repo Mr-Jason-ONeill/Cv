@@ -578,31 +578,36 @@ body {
   margin-left: 15px;
 }
 
-@media (max-width:600px) {
-  .navbar {
-    width: 100%;
+@media (max-width:768px) {
+  .content-left {
+    display: none;
   }
+  .input-icons {
+    display: none;
+  }
+  .navbar-center {
+    display: none;
+  }
+
+  .media-container {
+    width: 50%;
+  }
+
   .navbar-right-links {
     display: none;
   }
-  .your-pages {
-    display: none;
-    float: right;
-  }
-  .content-left {
-    width: 50%;
-  }
-  .share {
-    visibility: collapse;
-  }
-
-  .stories img {
-    display: none; 
-   }
   .news-feed {
+    margin-top: 20px;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    padding: 0;
   }
+  .content-right {
+    display: none;
+  }
+}
 
+@media (min-width:320px) {
+  .content-center {
+    width: 100%;
+  }
 }
