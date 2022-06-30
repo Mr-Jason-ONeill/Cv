@@ -88,6 +88,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
 }
+/* webkit, moz, ms and o are for different web browsers */
 
 .enter {
   background: #3498db;
