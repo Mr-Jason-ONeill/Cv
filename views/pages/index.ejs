@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+  <main>
+    <section id="top-section" class="top-section">
+      <div class="form-container">
+        <img class="profile" src="/images/profile.png" alt="">
+        <form action="#">
+          <div>
+            <label for="name">Username:</label>
+            <p class="login">Mr Jason Anthony O'Neill</p>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <p class="password">**********</p>
+          </div>
+          <span><input type="checkbox">Remember Me</span>
+          <div class="enterArea">
+            <button class="enter"><a href="/index.html#bottom-section">Login</a></button>
+          </div>
+        </form>
+        <br>
+        <p class="instruct">Click "Login" to see more.</p>
+      </div>
+    </section>
+
+    <section id="bottom-section" class="bottom-section">
+      <aside class="nav-container">
+        <nav class="taskbar">
+          <ul>
+            <%# 
+              ** This is a comment block in EJS. It will not be output in the browser
+
+              You can then use the data to output some information using JS syntax.
+            %>
+            <% taskbar.forEach(function(task) { %>
+              <li>
+                <a href="<%= task.href %>">
+                  <abbr title="<%= task.title %>">
+                    <img src="<%= task.src %>" alt="<%= task.alt %>">
+                  </abbr>
+                </a>
+              </li>
+            <% }); %>
+
+            <div id="clock" onload="showTime()"></div>
+          </ul>
+        </nav>
+      </aside>
+
+    </section>
+  </main>
+
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
+
+</body>
+
+</html>
